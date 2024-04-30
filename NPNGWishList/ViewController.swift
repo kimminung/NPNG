@@ -14,14 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
-    
-    
-    
     private var randomNumber: Int? {
-        (1...100).randomElement()
+        (1...10).randomElement()
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,10 +37,31 @@ class ViewController: UIViewController {
             
             // URLSession.shared.dataTask(with: <#T##URLRequest#>,
             //                                  요청을 하고
-            let task = URLSession.shared.dataTask(with: request) { data, request, error in
+            let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+                // JSONDecoder는 클래스니까 ()해주고 . 접근
                 
-                if let data = data {
-                    JSONDecoder()
+                if let error = error {
+                    
+                }
+                
+                guard let response = response as? HTTPURLResponse,
+                      (200...299).contains(response.statusCode)
+                else {
+                    return
+                }
+                
+                if let data = data,                        //data를 RemoteProduct.self의 타입으로 디코드 하겠다. .self는 메타타입 .Type임
+                                //decode는 ... ) throws -> T where T : Decodable형태 throws가 있으면 do - try로 처리,
+                    let product = try? JSONDecoder().decode(RemoteProduct.self, from: data) {
+                    
+                    DispatchQueue.main.async {
+                        self?.titleLabel.text = product.title
+                    }
+                    
+                    print(product.title)
+                    print(product.description)
+                    print(product.price)
+                    print(product.thumbnail)
                 }
             }
             //                                              데이터, 응답, 에러를 넘길거다.
