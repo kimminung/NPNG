@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCB908462BE0E24F0078DBA5 /* RemoteProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB908452BE0E24F0078DBA5 /* RemoteProduct.swift */; };
 		CCD5F4BF2BE0BBDA00DE4381 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5F4BE2BE0BBDA00DE4381 /* AppDelegate.swift */; };
 		CCD5F4C12BE0BBDA00DE4381 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5F4C02BE0BBDA00DE4381 /* SceneDelegate.swift */; };
 		CCD5F4C32BE0BBDA00DE4381 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD5F4C22BE0BBDA00DE4381 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CCB908452BE0E24F0078DBA5 /* RemoteProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProduct.swift; sourceTree = "<group>"; };
 		CCD5F4BB2BE0BBDA00DE4381 /* NPNGWishList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPNGWishList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD5F4BE2BE0BBDA00DE4381 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD5F4C02BE0BBDA00DE4381 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				CCD5F4BE2BE0BBDA00DE4381 /* AppDelegate.swift */,
 				CCD5F4C02BE0BBDA00DE4381 /* SceneDelegate.swift */,
 				CCD5F4C22BE0BBDA00DE4381 /* ViewController.swift */,
+				CCB908452BE0E24F0078DBA5 /* RemoteProduct.swift */,
 				CCD5F4C42BE0BBDA00DE4381 /* Main.storyboard */,
 				CCD5F4C72BE0BBDB00DE4381 /* Assets.xcassets */,
 				CCD5F4C92BE0BBDB00DE4381 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				CCD5F4C32BE0BBDA00DE4381 /* ViewController.swift in Sources */,
 				CCD5F4BF2BE0BBDA00DE4381 /* AppDelegate.swift in Sources */,
 				CCD5F4C12BE0BBDA00DE4381 /* SceneDelegate.swift in Sources */,
+				CCB908462BE0E24F0078DBA5 /* RemoteProduct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
