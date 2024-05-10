@@ -16,7 +16,7 @@ struct RemoteProduct: Decodable {
     var rating: Double
     var stock: Int
     var brand: String
-    var categody: String
+    var category: String
     var thumbnail: URL
     var images: [String]
     
